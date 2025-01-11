@@ -372,6 +372,18 @@ PrefabInstance:
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: 21300000, guid: a644f240760490847a1e950cfcca4a26, type: 3}
+    - target: {fileID: 1162226438577939557, guid: 40e945bbbe60cda4dbbeb4350a15dcf0, type: 3}
+      propertyPath: m_Color.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1162226438577939557, guid: 40e945bbbe60cda4dbbeb4350a15dcf0, type: 3}
+      propertyPath: m_Color.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1162226438577939557, guid: 40e945bbbe60cda4dbbeb4350a15dcf0, type: 3}
+      propertyPath: m_Color.r
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5304254665407534607, guid: 40e945bbbe60cda4dbbeb4350a15dcf0, type: 3}
       propertyPath: m_Size.z
       value: 8
@@ -525,8 +537,8 @@ Camera:
   m_GameObject: {fileID: 1482352957}
   m_Enabled: 1
   serializedVersion: 2
-  m_ClearFlags: 1
-  m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
+  m_ClearFlags: 2
+  m_BackGroundColor: {r: 1, g: 1, b: 1, a: 0}
   m_projectionMatrixMode: 1
   m_GateFitMode: 2
   m_FOVAxisMode: 0
