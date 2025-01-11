@@ -19,12 +19,13 @@ public class QuestionPanel : MonoBehaviour
         {
             if(gm.answerIndex == index)
             {
+                gm.Correct();
                 spriteRenderer.color = Color.white;
             }
             else
             {
+                gm.Wrong();
                 spriteRenderer.color += color;
-                gm.NotCorrect();
             }
         }
     }

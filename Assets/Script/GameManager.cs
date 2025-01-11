@@ -7,6 +7,7 @@ using TMPro;
 public class GameManager : MonoBehaviour
 {
     private const float PANEL_DISTANCE = 25f;
+    [SerializeField] private SoundManager sm;
     [SerializeField] private QuestionController qc;
     [SerializeField] private GameObject questionPanel;
     [SerializeField] private SpriteRenderer answerImage;
@@ -41,11 +42,14 @@ public class GameManager : MonoBehaviour
             answerImage.sprite = qc.questions[answerIndex].image;
             preAnserIndex = answerIndex;
         }
+    }
 
-        if(answerIndex == currentQuestionIndex)
-        {
-            NextQuestion();
-        }
+    
+
+    public void Correct()
+    {
+        sm.PlayCorrectAnswer();
+        NextQuestion();
     }
 
     private void NextQuestion()
@@ -60,12 +64,8 @@ public class GameManager : MonoBehaviour
         }
     }
 
-    private Question GetCurrentQuestion()
-    {
-        return qc.questions[currentQuestionIndex];
-    }
-
-    public void NotCorrect(){
+    public void Wrong(){
+        sm.PlayWrongAnswer();
         StartCoroutine(BoundRoad());
     }
 
