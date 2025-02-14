@@ -9,7 +9,7 @@ public class WebCamera : MonoBehaviour {
     [SerializeField] int devicesIndex = 0;
     int width = 1920;
     int height = 1080;
-    int fps = 30;
+    int fps = 60;
     WebCamTexture webcamTexture;
     
 
